@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الثانوية للبنات الشاملة - مليح</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #8e24aa;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background 0.3s;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #6a1b9a;
+            font-size: 1.8rem;
+        }
+
+        /* شبكة البطاقات */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img, .card video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            max-height: 200px;
+            object-fit: cover;  /* اقتصاص مناسب دون تشويه */
+        }
+
+        /* معرض الصور - شبكة داخلية */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery-grid img, .gallery-grid video {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #4a148c;
+        }
+
+        footer {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* تحسينات للشاشات الصغيرة */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+                border-bottom: 1px solid #aa6ecf;
+            }
+
+            nav a:last-child {
+                border-bottom: none;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            input, textarea {
+                width: 90%;
+            }
+        }
+
+        /* تحسين مظهر الروابط */
+        a {
+            word-break: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>مليح الثانوية للبنات الشاملة</h1>
+    <p>العنوان: الأردن - مادبا - مليح</p>
+    <p>مديرة المدرسة: عالية الكعابنة</p>
+</header>
+
+<nav>
+    <a href="#about">عن المدرسة</a>
+    <a href="#sections">أقسام المدرسة</a>
+    <a href="#library">المكتبة الإلكترونية</a>
+    <a href="#gallery">معرض الصور والفيديو</a>
+    <a href="#login">تسجيل دخول الطالبات</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
+
+<section id="about">
+    <h2>عن المدرسة</h2>
+    <p>مدرسة مليح الثانوية للبنات الشاملة هي مؤسسة تعليمية تهدف إلى تقديم تعليم متميز وإعداد طالبات قادرات على الإبداع والتميز في مختلف المجالات.</p>
+    <p>
+        <a href="https://www.facebook.com/people/%D9%85%D8%AF%D8%B1%D8%B3%D8%A9-%D9%85%D9%84%D9%8A%D8%AD-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9-%D9%84%D9%84%D8%A8%D9%86%D8%A7%D8%AA/61557404757818/" 
+           target="_blank" 
+           style="color: #6a1b9a; text-decoration: none; font-weight: bold;">
+           الانتقال إلى صفحة المدرسة على فيسبوك
+        </a>
+    </p>
+</section>
+
+<section id="sections">
+    <h2>أقسام المدرسة</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>القسم الأكاديمي</h3>
+            <p>يقدم المواد العلمية والأدبية وفق المنهاج المعتمد ويؤهل الطالبات للتعليم الجامعي.</p>
+        </div>
+        <div class="card">
+            <h3>القسم التقني</h3>
+            <p>يوفر تخصصات مهنية وتقنية تساعد الطالبات على اكتساب مهارات عملية لسوق العمل.</p>
+        </div>
+    </div>
+</section>
+
+<section id="library">
+    <h2>المكتبة الإلكترونية</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>كتب علمية</h3>
+            <p>مجموعة من الكتب العلمية بصيغة PDF متاحة للتحميل.</p>
+            <button onclick="alert('سيتم إضافة روابط التحميل قريباً')">عرض الكتب</button>
+        </div>
+        <div class="card">
+            <h3>كتب أدبية</h3>
+            <p>روايات وكتب أدبية لتنمية مهارات القراءة.</p>
+            <button onclick="alert('سيتم إضافة روابط التحميل قريباً')">عرض الكتب</button>
+        </div>
+        <div class="card">
+            <h3>مراجع تقنية</h3>
+            <p>مراجع خاصة بالقسم التقني لدعم الجانب العملي.</p>
+            <button onclick="alert('سيتم إضافة روابط التحميل قريباً')">عرض المراجع</button>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>معرض الصور والفيديو</h2>
+    <!-- شبكة معرض موحدة تجمع كل الصور والفيديوهات -->
+    <div class="gallery-grid">
+        <!-- الصور (يفضل استخدام روابط حقيقية أو مسارات محلية صحيحة) -->
+        <img src="../image/WhatsApp Image 2026-03-04 at 9.53.48 AM.jpeg "alt="فعالية مدرسية 1" onerror="this.src='https://via.placeholder.com/300x200?text=صورة+غير+متوفرة'">
+        <img src="../image//WhatsApp Image 2026-03-04 at 9.53.49 AM (1).jpeg" alt="فعالية مدرسية 2" onerror="this.src='https://via.placeholder.com/300x200?text=صورة+غير+متوفرة'">
+        <img src="../image//WhatsApp Image 2026-03-04 at 9.53.49 AM.jpeg" alt="فعالية مدرسية 3" onerror="this.src='https://via.placeholder.com/300x200?text=صورة+غير+متوفرة'">
+        <img src="../image/WhatsApp Image 2026-03-04 at 9.53.51 AM.jpeg" alt="إذاعة مدرسية" onerror="this.src='https://via.placeholder.com/300x200?text=صورة+غير+متوفرة'">
+        <img src="../image/WhatsApp Image 2026-03-04 at 9.54.03 AM.jpeg" alt="نشاط طالبات" onerror="this.src='https://via.placeholder.com/300x200?text=صورة+غير+متوفرة'">
+        
+        <!-- مقاطع الفيديو (يفضل رفعها على الخادم) -->
+       
+        
+        <video controls poster="https://via.placeholder.com/300x200?text=فيديو+3">
+            <source src="../image/WhatsApp Video 2026-03-04 at 9.52.23 AM.mp4" type="video/mp4">
+            المتصفح لا يدعم عرض الفيديو.
+        </video>
+    </div>
+    <p style="margin-top: 20px; color: #777;">ملاحظة: الصور والفيديوهات المعروضة للتوضيح، يرجى استبدال المسارات بملفاتك الحقيقية.</p>
+</section>
+
+<section id="login">
+    <h2>تسجيل دخول الطالبات</h2>
+    <form onsubmit="event.preventDefault(); alert('تم تسجيل الدخول بنجاح');">
+        <input type="text" placeholder="اسم المستخدم" required><br>
+        <input type="password" placeholder="كلمة المرور" required><br>
+        <button type="submit">تسجيل الدخول</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>نموذج تواصل</h2>
+    <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح');">
+        <input type="text" placeholder="الاسم الكامل" required><br>
+        <input type="email" placeholder="البريد الإلكتروني" required><br>
+        <textarea rows="4" placeholder="اكتب رسالتك هنا" required></textarea><br>
+        <button type="submit">إرسال</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 جميع الحقوق محفوظة - الثانوية للبنات الشاملة - مليح</p>
+    <p>
+        <a href="https://www.facebook.com/people/%D9%85%D8%AF%D8%B1%D8%B3%D8%A9-%D9%85%D9%84%D9%8A%D8%AD-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9-%D9%84%D9%84%D8%A8%D9%86%D8%A7%D8%AA/61557404757818/" 
+           target="_blank" 
+           style="color: white; text-decoration: none; font-weight: bold;">
+           الانتقال إلى صفحة المدرسة على فيسبوك
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
